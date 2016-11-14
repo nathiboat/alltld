@@ -81,6 +81,9 @@ $app->singleton(
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+$app->configure('laravel-smarty');
+$app->register(Ytake\LaravelSmarty\SmartyServiceProvider::class);
+$app->register(Ytake\LaravelSmarty\SmartyConsoleServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
@@ -94,7 +97,7 @@ $app->singleton(
 */
 
 $app->group(['namespace' => 'App\Http\Controllers'], function ($app) {
-    require __DIR__.'/../routes/web.php';
+    require '../routes/web.php';
 });
 
 return $app;

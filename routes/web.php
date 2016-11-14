@@ -11,6 +11,6 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
+$app->get('/', 'netbetukController@index');
+
+$app->get('/go.netbet.co.uk/{product}', 'netbetukController@index');
