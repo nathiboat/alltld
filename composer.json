@@ -1,0 +1,12 @@
+{
+  "name": "All TLD",
+  "description": "All tld in one",
+  "minimum-stability": "no stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Nathi",
+      "email": "nathi.taengnim@gimo.co.uk"
+    }
+  ]
+}
