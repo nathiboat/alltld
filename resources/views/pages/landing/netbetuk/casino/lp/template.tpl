@@ -1,0 +1,1 @@
+this is casino lp template
